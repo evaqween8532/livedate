@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.95);
+            width: 100%;
+            max-width: 380px;
+            border-radius: 24px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: 135px;
+            height: 135px;
+            margin: 0 auto 20px;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #ff2e63;
+            padding: 3px;
+            background: #fff;
+            box-shadow: 0 8px 20px rgba(255, 46, 99, 0.3);
+        }
+
+        .status-badge {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            width: 22px;
+            height: 22px;
+            background-color: #2ecc71;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .verified-icon {
+            color: #1da1f2;
+            font-size: 20px;
+        }
+
+        .online-text {
+            font-size: 13px;
+            color: #2ecc71;
+            font-weight: 600;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .profile-bio {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 28px;
+            padding: 0 10px;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 16px 24px;
+            background: linear-gradient(90deg, #ff2e63 0%, #ff5e62 100%);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 700;
+            border-radius: 50px;
+            box-shadow: 0 10px 20px rgba(255, 46, 99, 0.35);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(255, 46, 99, 0.5);
+            background: linear-gradient(90deg, #ff1e56 0%, #ff4b5c 100%);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        .footer-note {
+            margin-top: 18px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=80" alt="Profile Photo" class="profile-img">
+            <span class="status-badge" title="Online Now"></span>
+        </div>
+
+        <h1 class="profile-name">
+            Elena, 23 <span class="verified-icon">&#10004;</span>
+        </h1>
+        <div class="online-text">&#9679; Active Now</div>
+
+        <p class="profile-bio">
+            Looking for meaningful connections and fun conversations. Tap the button below to view my private gallery and message me directly.
+        </p>
+
+        <a href="https://ogzdaa.dlstinguishedate.net/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=196899&s2=2297299" class="cta-button">
+            Continue to profile
+        </a>
+
+        <div class="footer-note">
+            18+ Verified Member
+        </div>
+    </div>
+
+</body>
+</html>
